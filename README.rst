@@ -2,8 +2,14 @@ Coding the Matrix: Linear Algebra through Computer Science Applications Answer
 ==============================================================================
 
 I tried to solve assignments by using list/dict comprehensions as much as
-possible. My favorite built-in library is `itertools` is also used
+possible. My favorite built-in library is ``itertools`` is also used
 frequently. No external library is required.
+
+Tests
+-----
+
+Tests are written by using Konira_. You need to install ``Konira`` in
+order to run tests properly.
 
 **DISCLAIMER**
 
@@ -12,3 +18,5 @@ studying the course and looking for a hint or suggestion for your current stuck 
 this is **not** the right place. In other words, you have to solve the
 assignments yourselves beforing looking at someone else's full answers. Besides, I am not
 resposible for your grade if you use this code.
+
+.. _Konira: https://github.com/alfredodeza/konira
