@@ -1,5 +1,5 @@
 import unittest
-from .. import hw2
+import hw2
 
 class HW2Test(unittest.TestCase):
     def test_vec_select(self):
