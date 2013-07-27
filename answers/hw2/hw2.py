@@ -1,11 +1,11 @@
 # version code 761
 # Please fill out this stencil and submit using the provided submission script.
-try:
-    from vec import Vec
-except ImportError as e:
-    from .vec import Vec
 
+from vec import Vec
 
+from GF2 import one
+
+from itertools import product
 
 ## Problem 1
 def vec_select(veclist, k): 
@@ -76,9 +76,24 @@ def GF2_span(D, L):
     >>> Vec(D, {x:one for x in D}) in GF2_span(D, L)
     True
     '''
-    pass
+    length = len(L)
+    products = [_ for _ in product([0, one], repeat=length)]
+    """ This is non list-comprehension version
+    veclist = []
+    for p in products:
+        sub_veclist = []
+        for num, vec in zip(p, L):
+            new_vec = Vec(D, {})
+            for d in D:
+                new_vec.f[d] = vec.f.setdefault(d, 0) * num
 
+            sub_veclist.append(new_vec)
+        veclist.append(vec_sum(sub_veclist, D))
 
+    return veclist
+    """
+
+    return [vec_sum([Vec(D, {d: (vec.f.setdefault(d, 0) * num) for d in D}) for num, vec in zip(p, L)], D) for p in products]
 
 ## Problem 4
 # Answer with a boolean, please.
