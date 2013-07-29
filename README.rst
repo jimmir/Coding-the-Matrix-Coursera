@@ -7,6 +7,8 @@ frequently. No external library is required.
 
 Tests
 -----
+.. image:: https://api.travis-ci.org/quangquach/Coding-the-Matrix-Coursera.png?branch=master
+   :target: http://travis-ci.org/quangquach/Coding-the-Matrix-Coursera
 
 You can test homework by using py.test_
 
