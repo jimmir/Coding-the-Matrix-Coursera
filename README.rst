@@ -8,8 +8,8 @@ frequently. No external library is required.
 Tests
 -----
 
-Tests are written by using Konira_. You need to install ``Konira`` in
-order to run tests properly.
+You can test homework by using py.test_
+
 
 **DISCLAIMER**
 
@@ -19,4 +19,4 @@ this is **not** the right place. In other words, you have to solve the
 assignments yourselves beforing looking at someone else's full answers. Besides, I am not
 resposible for your grade if you use this code.
 
-.. _Konira: https://github.com/alfredodeza/konira
+.. _py.test: http://pytest.org
