@@ -1,0 +1,5 @@
+language: python
+python:
+  - "3.3" # only support latest python 3
+
+script: make test
